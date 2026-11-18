@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vacuum Panic! — Daily Cat Dash</title>
+    <link rel="modulepreload" href="splash.js">
+    <style>
+      body {
+        margin: 0;
+        width: 100dvw;
+        height: 100dvh;
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+        background: radial-gradient(900px 600px at 50% 30%, #2c2145 0%, #17102a 65%);
+        font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+        color: #fdf6e9;
+      }
+      main {
+        display: grid;
+        gap: 0.6rem;
+        justify-items: center;
+        text-align: center;
+        padding: 1rem;
+      }
+      h1 { margin: 0; font-size: 2rem; color: #ffb03a; }
+      .sub { color: #ff7eb6; font-weight: bold; letter-spacing: 0.12em; }
+      p { margin: 0; color: #cdb9dd; max-width: 34ch; }
+      #puzzle-date { color: #fdf6e9; font-size: 0.9rem; }
+      button {
+        font: inherit;
+        font-weight: bold;
+        font-size: 1.05rem;
+        padding: 0.6rem 1.6rem;
+        border: 0;
+        border-radius: 999px;
+        background: #2fe08a;
+        color: #0c2b1a;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Vacuum Panic!</h1>
+      <div class="sub">THE DAILY CAT DASH</div>
+      <p>
+        The robot vacuums are loose! Catch fish treats and yarn balls, dodge
+        the machines, and survive 60 seconds until the front door opens.
+      </p>
+      <div id="puzzle-date"></div>
+      <button id="start-btn" type="button">Play today's run</button>
+    </main>
+    <script src="splash.js" type="module"></script>
+  </body>
+</html>
